@@ -3,8 +3,74 @@ id
 name
 className
 
-linkText
-partialLinkText---> if text of the link is very lengthy or dynamic 
+linkText---------> works only with links
+partialLinkText---> works only with links.
+if text of the link is very lengthy or dynamic 
 
 cssSelector
 xpath
+
+
+cssSelector
+css-->Cascading Style Sheets
+syntax: tag[AN='AV']
+
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+
+a[id='a1']
+a[name='n1']
+a[class='c1']
+a[title='click me']
+a[href='http://www.google.com']
+
+How to validate cssSelector expression
+1. goto dev tool bar
+2. click on html tree
+3. press ctrl+f
+4. type the cssSelector expression
+
+it will highlight matching element
+
+limitation of cssSelector? - it does not support text
+
+
+can we use double quote in cssSelector?
+in browser? yes--> a[id="a1"]
+in selenium? yes--> "a[id=\"a1\"]"
+
+in cssSelector we can use shortcut
+# represents id
+a[id='a1']---> 
+a#a1--> 2 conditions   tag should be 'a'  and id should be 'a1'
+ #a1 --> 1 condition id should be 'a1' (tag can be anything)
+ 
+
+. represents class
+a[class='c1']
+a.c1--> 2 conditions   tag should be 'a'  and class should be 'c1'
+.c1--> 1 condition class should be 'c1' (tag can be anything)
+
+URL: https://pos.aksharatraining.in/pos/public/#
+UN: admin
+PW: pointofsale
+
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+input[id='input-username']--> #input-username
+
+
+<input class="form-control" id="input-password" name="password" type="password" placeholder="Password">
+#input-password
+
+<button class="btn btn-lg btn-primary" name="login-button" type="submit">Go</button>
+here class attribute value has 3 classnames separated by space
+"btn btn-lg btn-primary"--> 1. btn   2. btn-lg  3.btn-primary 
+
+button.btn.btn-lg.btn-primary
+
+.btn
+
+Assignment 
+write login script for https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+

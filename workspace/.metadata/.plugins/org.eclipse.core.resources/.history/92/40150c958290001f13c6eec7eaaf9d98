@@ -1,0 +1,27 @@
+package day07;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo7 {
+//pseudo code
+	public static void main(String[] args) {
+		//open the browser
+		WebDriver driver= new ChromeDriver();
+		//enter the url
+		
+		//maximize the browser
+		
+		//enter valid user name
+		
+		//enter valid password
+		
+		//click on go button
+		
+		//verify that home page is displayed
+		
+		//close the browser
+
+	}
+
+}

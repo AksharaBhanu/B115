@@ -1,0 +1,30 @@
+package day07;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo7 {
+//pseudo code
+	public static void main(String[] args) throws InterruptedException {
+		//open the browser
+		WebDriver driver= new ChromeDriver();
+		//enter the url
+		driver.get("https://pos.aksharatraining.in/pos/public/#");
+		//maximize the browser
+		driver.manage().window().maximize();
+		//enter valid user name
+		Thread.sleep(5000);
+		driver.findElement(By.cssSelector("#input-username")).sendKeys("admin");
+		
+		//enter valid password
+		
+		//click on go button
+		
+		//verify that home page is displayed
+		
+		//close the browser
+
+	}
+
+}
