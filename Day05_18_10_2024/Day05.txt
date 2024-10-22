@@ -1,0 +1,80 @@
+Webpage is created using HTML
+HTML--> Hyper Text Markup Language
+ 
+how to create our own html page?
+1. open the notepad
+2. write the html code
+3. Save it as Sample1.html  in req location
+4. close the notepad
+5. double click on Sample1.html
+
+html file created by us (not hosted on internet) is called as static webpage
+
+to open static webpage using selenium
+1. double click on Sample1.html
+2. copy the url present in address bar
+3. paste it as argument for driver.get(arg); method in eclipse
+4. run the code
+
+
+html
+1. tag
+2. attribute
+3. text
+
+inspecting the element
+1. right click on the req element
+2. select inspect (opens dev tool bar)
+3. goto elements (html tree)
+4. it will high light the html code of selected element 
+5. right click on that -> copy--> copy outer html
+6. paste is in req location(notepad)
+
+<input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwiFivDdjJiJAxXWR2wGHeTrHhMQ4dUDCB8">
+
+
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+
+tag--> a
+attributes--> id name class title href
+text--> Google
+
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+----------------------------------------------------------------------------------------------
+in selenium before performing any action (click type select double click right click drag drop)
+we must search the element
+
+to search the element we use findElement method
+to find the element we need to specify 'how to identify' the element --> locators
+in selenium there are 8 types of locators
+1. tagName
+2. id
+3. name
+4. className
+5. linkText
+6. partialLinkText
+7. cssSelector
+8. xpath
+
+all the locators are static method present in By class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

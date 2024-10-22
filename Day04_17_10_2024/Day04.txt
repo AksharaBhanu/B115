@@ -1,0 +1,23 @@
+WebDriver methods
+1. get("url"); --> enter the url in address bar of the browser
+2. close();---> close the browser
+3. quit();--> close the browser
+4. getTitle()--> get the title of the page
+5. getCurrentUrl()--> get the url present in the address bar of the browser
+6. getPageSource()--> get the html code of the page
+7. navigate()
+	a. back()
+	b. forward()
+	c. refresh()
+	d. to("url")
+	e. to(URL)
+8. manage().window()
+	a. maximize()
+	b. minimize()
+	c. fullscreen()
+	d. getSize()
+	e. setSize(d)
+	f. getPosition()
+	g. setPosition(p)
+
+9.switchTo().activeElement()

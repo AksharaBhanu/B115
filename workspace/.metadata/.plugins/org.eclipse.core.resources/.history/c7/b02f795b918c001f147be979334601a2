@@ -1,0 +1,29 @@
+package day04;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo5 {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://www.google.com");
+
+		driver.manage().window().setSize(new Dimension(500,600));
+	
+		Thread.sleep(1000);
+		int n=100;
+		for(int i=1;i<=10;i++)
+		{
+			driver.manage().window().setPosition(new Point(x,10));
+			x=x+100;
+			Thread.sleep(1000);
+		}
+		
+		
+		Thread.sleep(1000);
+		
+		driver.quit();
+	}
+}

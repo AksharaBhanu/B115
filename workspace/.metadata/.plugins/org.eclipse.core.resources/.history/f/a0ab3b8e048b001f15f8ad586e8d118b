@@ -1,0 +1,28 @@
+package day02;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class Demo5 {
+
+	
+	public static void test(WebDriver driver)
+	{
+		driver.get("http://www.google.com");
+		driver.quit();
+	}
+	public static void main(String[] args)
+	{
+		WebDriver driver=new ChromeDriver();
+		Demo5.test(driver);
+		
+		WebDriver driver2=new FirefoxDriver();
+		Demo5.test(driver2);
+		
+		WebDriver driver3=new EdgeDriver();
+		Demo5.test(driver3);
+	}
+}

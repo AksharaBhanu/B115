@@ -1,0 +1,71 @@
+every day same time same link same passcode
+
+Selenium:B115
+know java--> create object and how to call a method
+Emp e1=new Emp();
+e1.print();
+OOPS
+Eclipse
+java 7pm to 8.30PM Monday-Friday
+-------------------------------------------------------------------------------
+9481787493
+------------------------------------------------------------------------------
+Selenium-->Selenium automates browsers. That's it!
+
+"Selenium is a free and open source web application test automation tool"
+
+
+free-->no need to pay--> gmail , java, zoom,github, fb , Naukri
+
+open source-->ex: java python unix ....
+we can see the code ,we can download, customize, sell
+
+web application---> any app which we can open it using browser(Firefox, chrome,edge,opera)
+ex: google.com, Naukri.com, gmail.com shaadi.com..https://aksharatraining.com/
+
+test automation: performing testing(verification) automatically with out any manual intervention
+
+tool: software 
+
+AutoIT
+Winium
+
+how to install selenium
+1. JDK---> java -version
+2. eclipse
+3. selenium jar file-->https://www.selenium.dev/downloads/ 
+4. browser
+5. web app
+
+open eclipse
+create a project --> B115
+under src, create package-> day01
+under day01 create Demo1.java with main method 
+write a code to print a msg
+execute it and ensure that it is working fine
+
+in eclipse, right click on the java project(B115) --> new --> folder
+specify the name (lib) and click finish
+copy the downloaded selenium jar file
+right click on lib folder present in eclipse--> paste
+right click on the selenium jar file--> build path-> add to build path
+
+
+To watch  B115 Selenium videos on mobile app 
+
+Link to download the mobile app
+https://aksharatraining.com/mobile-app/
+
+Please follow the steps
+
+A. Open Akshara Mobile App
+B. Click 'Batches' at the bottom of the screen
+C. Click +
+D. Enter the batch code as B115 and click OK
+
+After your batch request is approved follow the below Steps
+
+1. Open Akshara Mobile App
+2. Click Batches at the bottom of the screen
+3. Click AITM-JSER-OCT14-B115
+4. Click Videos tab

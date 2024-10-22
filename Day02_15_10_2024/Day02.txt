@@ -1,0 +1,89 @@
+selenium
+free and open source web app test automation tool
+JDK Eclipse jar browser web 
+
+what are the browsers supported by selenium?
+Chrome IE Edge Firefox safari Opera
+
+What are OS supported by selenium?
+
+Windows Linux & Mac
+
+What are languages supported by selenium? -12
+java 
+C# (.net)
+python
+ruby
+JS
+Go
+Haskell
+Perl
+PHP
+R
+Dart
+Pharo Smalltalk
+
+can we see the src code of selenium?
+yes
+
+how to view the src code?
+1. go to https://github.com/SeleniumHQ/selenium
+2. click java
+3. click src
+4. click org/openqa/selenium
+5. click 'chrome'
+6. click 'ChromeDriver.java'
+
+org.openqa.selenium.chrome.ChromeDriver
+public class ChromeDriver extends ChromiumDriver
+
+org.openqa.selenium.edge.EdgeDriver
+public class EdgeDriver extends ChromiumDriver
+
+org.openqa.selenium.chromium.ChromiumDriver
+public class ChromiumDriver extends RemoteWebDriver
+
+org.openqa.selenium.firefox.FirefoxDriver
+public class FirefoxDriver extends RemoteWebDriver
+
+org.openqa.selenium.ie.InternetExplorerDriver
+public class InternetExplorerDriver extends RemoteWebDriver
+
+
+org.openqa.selenium.safari.SafariDriver
+public class SafariDriver extends RemoteWebDriver
+
+org.openqa.selenium.remote.RemoteWebDriver
+public class RemoteWebDriver implements WebDriver,JavascriptExecutor,TakesScreenshot
+
+
+
+org.openqa.selenium.WebDriver
+public interface WebDriver extends SearchContext
+
+
+org.openqa.selenium.SearchContext
+public interface SearchContext 
+
+org.openqa.selenium.JavascriptExecutor
+public interface JavascriptExecutor
+
+org.openqa.selenium.TakesScreenshot
+public interface TakesScreenshot
+
+Selenium WebDriver Architecture
+1. in selenium for every browser we have respective driver class ex: ChromeDriver for Chrome Browser ...
+2. both ChromeDriver and EdgeDriver inherits ChromiumDriver
+3. all browser classes FF,IE,Safari,CD inherits RemoteWebDriver
+4. RemoteWebDriver implemetns WebDriver,JSE & TakesScreenshoot interfaces
+5. WebDriver extends SearchContext interface
+
+super most class is RemoteWebDriver
+super most interface is SearchContext
+
+in selenium3 - it used JSON(JavaScript Object Notation) Wire Protocol
+in selenium4--> W3C Protocol--> WWWC--> world wide web consortium 
+
+//As per java coding std, it is better to use interface over class
+//	hence we use WebDriver (which has max methods)
+

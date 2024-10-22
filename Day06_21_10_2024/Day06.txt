@@ -1,0 +1,17 @@
+when we use findElement
+1. if number of matching element is 1 , it returns address of the matching element (WebElement)
+2.  if number of matching element is 0 (no match), then it throws NoSuchElementException
+3. if number of matching element is >1 it returns address of the 1st matching element
+
+
+<a id="a1" name="n1" class="c1" title="click me" href="http://www.google.com">Google</a>
+selenium has 8 locators
+
+tagName
+id
+name
+className
+linktext
+partialLinktext
+cssSelector
+xpath

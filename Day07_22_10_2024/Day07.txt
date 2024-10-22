@@ -1,0 +1,10 @@
+tagName
+id
+name
+className
+
+linkText
+partialLinkText---> if text of the link is very lengthy or dynamic 
+
+cssSelector
+xpath
