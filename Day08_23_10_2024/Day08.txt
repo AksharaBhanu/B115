@@ -1,0 +1,54 @@
+xpath
+path of the element in html tree
+
+we start with . dot--> root element
+we / --> child element
+ex: ./html/body/a
+
+specifying dot is not mandatory
+/html/body/a
+
+xpath supports index but in xpath index starts from 1
+
+if we do not specify any index , it means all
+ex:
+/html/body/a --> all the html/all the body/all a
+/html[1]/body[1]/a-->1st HTML/1st body/all a
+/html[1]/body[1]/a[1]-->1st HTML/1st body/1st a
+
+we started from root element and navigated till the element--> absolute xpath
+easy to understand -> but very difficult to write--> relative xpath
+
+./html--> child of root is html--> correct
+.//a----> descendant of root is a--> correct
+
+absolute xpath			relative xpath
+/html/body/a			//a
+/html/body/div/input		//input
+
+
+cssSelector--> tag[AN='AV']
+
+in xpath also we can use attribute tag[@AN='AV']
+
+
+
+/html/body/a[@id='a1']		//a[@id='a1']
+
+xpath will support text
+
+tag[text()='TV']
+
+/html/body/a[text()='Google']			//a[text()='Google']
+
+
+
+
+
+
+
+
+
+
+
+
