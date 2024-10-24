@@ -1,0 +1,97 @@
+locators-8
+tagname
+id
+name
+className
+linktext
+partiallinktext
+cssSelector--> tag[AN='AV'] . class  # id
+xpath---> path of the element in html tree
+types
+1. absolute xpath--> ./html/body/a
+2. relative xpath--> .//a
+
+we can use index--> starts from 1
+tag[@AN='AV']
+tag[text()='tv']
+
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+//input[@id='input-username']
+
+<input class="form-control" id="input-password" name="password" type="password" placeholder="Password">
+//input[@id='input-password']
+
+<button class="btn btn-lg btn-primary" name="login-button" type="submit">Go</button>
+//button[@type="submit" and text()='Go']
+//button[@type="submit" or not(text()='Go')]
+
+
+//button[@name='login-button']
+//button[@ type="submit"]
+
+in xpath we can use 'and or not'
+//button[@name='login-button' and @type='submit']
+//button[@name='login-button' or @type='submit']
+//input[not(@name='username')]
+
+
+
+<input type="hidden" name="csrf_ospos_v3" value="522550c504b90c66bcc478b17b938aa4">
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+<input class="form-control" id="input-password" name="password" type="password" placeholder="Password">
+//input[@placeholder="Password"]
+
+//input[not(@name='username')]
+
+
+<h5 data-v-7b563373="" data-v-0af708be="" class="oxd-text oxd-text--h5 orangehrm-login-title">Login</h5>
+//h5[text()='Login']]
+
+<p data-v-7b563373="" data-v-0af708be="" class="oxd-text oxd-text--p">Username : Admin</p>
+//p[text()='Username : Admin']
+//p[text()='Password : admin123']
+
+<label data-v-30ff22b1="" data-v-957b4417="" class="oxd-label">Username</label>
+//label[text()='Username']
+
+<button data-v-10d463b7="" data-v-0af708be="" type="submit" class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"><!----> Login <!----></button>
+//button[@type='submit']
+//button[text()=' Login ']
+
+
+<p >Forgot your password? </p>
+//p[text()='Forgot your password? ']
+
+<p data-v-7b563373="" class="oxd-text oxd-text--p orangehrm-copyright">OrangeHRM OS 5.7</p>
+//p[text()='OrangeHRM OS 5.7']
+
+
+<a href="http://www.orangehrm.com" target="_blank">OrangeHRM, Inc</a>
+//a[text()='OrangeHRM, Inc']
+//a[@href='http://www.orangehrm.com']
+
+contains
+//tag[contains(arg1,arg2)]
+arg1--> @AN or text()
+arg2--> value
+
+//tag[contains(@AN,'value')]
+//tag[contains(text(),'value')]
+
+
+
+<img  src="/web/images/ohrm_branding.png?v=1721393199309" >
+//img[contains(@src,'branding')]
+
+<div  class="oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials">//
+//div[contains(@class,'credentials')]
+
+
+
+
+
+
+
+
+
+
