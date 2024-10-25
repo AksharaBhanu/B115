@@ -1,0 +1,42 @@
+tag[@AN='AV' and @AN2='AV' or not(@AN3='AV') and text()='tv']
+tag[contains(@AN,'av') or contains(text(),'tv')]
+<th>Sl No</th>
+//th[text()='Sl No']
+.//th[.='Sl No']
+
+dot present before / is root element
+dot present with in [] text() 
+
+for partial match we have 3 functions
+
+tag[starts-with(arg1,arg2)]
+tag[contains(arg1,arg2)]
+tag[ends-with(arg1,arg2)]
+
+arg1--> @AN  or text()
+arg2--> value
+<a    href="http://www.google.com">
+//a[@href='http://www.google.com']
+
+
+//a[starts-with(@href,'http')]
+
+//a[contains(@href,'http')]
+//a[contains(@href,'google')]
+//a[contains(@href,'com')]
+
+//a[ends-with(@href,'com')]
+
+Note: ends-with is not supported by browsers hence it cant be used in selenium
+
+/html/body/table/tbody/tr[1]/th[1]
+//th[text()='Sl No']
+
+navigating from parent element to child element -> forward traversing
+navigating from child element to parent element --> backward traversing
+
+//th[text()='Sl No']/../../../../..
+
+I & D xpath
+
+
