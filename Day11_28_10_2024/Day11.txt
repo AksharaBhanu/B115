@@ -1,0 +1,103 @@
+https://www.makemytrip.com/
+Departure
+Nov 15
+
+//div[contains(text(),'November')]/../..//p[text()='15']
+
+(//input)[1]--> it will execute the xpath present inside the (), matching element will be stored in xpath array
+ xpath array index starts from 1
+the [1] written outside () will take the index from xpath array and not from the html tree
+
+local index - html tree index
+global index or group index
+
+//a[1]    --> all the links whose index is 1--> all 1st link
+(//a)[1] ---> The 1st link
+
+(//a)[last()]-- only the last link
+
+(//a)[last()-1]--last but one
+
+(//a)[position()<4]-- 1st 3 links
+(//a)[position()>7]
+
+(//a)[position()>5 and position()<8]
+
+(//a)[position() mod 2=0]-- matches with all the links having even index
+(//a)[position() mod 2=1]--odd
+
+
+(//span[text()='Apple iPhone 15 (128 GB) - Black'])[1]/../../../../div[3]/div[1]/div/div[1]/div[1]/div[1]/a/span/span[1]
+
+----------------------------------------------------------------------------------
+xpath Axes
+./axes::tag
+
+./child::html
+
+./child::html/child::body/child::a----> by default / itself represent child 
+
+./html/body/a--> using dot is not mandatory---> /html/body/a
+
+./descendant::a----> //a
+
+//a/parent::body--> //a/..
+
+//a/ancestor::html
+
+//td[text()='Java']/following-sibling::td
+
+//td[text()='1']/following-sibling::td[2]'
+
+//td[text()='1']/preceding-sibling::td[2]
+
+//td[text()='Java']/preceding-sibling::td 
+
+//td[text()='99']/preceding-sibling::td[1]
+
+in preceding-sibling index will bottom up
+
+--------------------------------------------------------------------------------------------
+tagname id name
+cn lt plt
+cssS xpath
+----------------------------------------------
+css will not support text
+it will not support backward traversing--> IE & DE
+
+id 
+name
+lt
+xpath
+
+//td[text()='Java']/../td[3]
+//td[text()='Java']/following-sibling::td
+
+//div[contains(text(),'November')]/../following-sibling::div[2]//p[text()='15']
+
+//div[contains(text(),'November')]/../..//p[text()='15']
+
+//div[contains(text(),'November')]/../following-sibling::div[2]/div[3]/div[6]/div[1]/p[1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
