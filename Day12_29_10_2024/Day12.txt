@@ -1,0 +1,44 @@
+8 locators
+tag name, id, name, classname, linktext, partial link text, cssS, xpath
+
+4 imp
+id
+name
+lt
+xpath
+
+findElement return type is WebElement
+1. if locator is matching with multiple elements --> findElement returns 1st matching element
+2. if locator is not matching with any elements--> findElement will throw NoSuchElementException
+
+WebElement Methods
+to perform action
+1.sendKeys(arg)----> to enter/type some inputs
+2.clear()---> remove the value from the field (text box , password, text area-> multi line text box)
+3.click()--> to click on any element
+4.submit()--> to click on submit button (type='submit')
+
+to perform verification
+1. isSelected()--> to verify whether check box , radio button , drop down list option is selected or not
+		returns boolean: true--> selected  false-->not selected
+2.isEnabled()---> any element --> to verify whether the element is enabled or disabled
+		returns boolean: true--> enabled  false-->disabled
+
+3.isDisplayed()--> to verify whether specified element is displayed or not 
+---------------------------------------------------------------------------------------------
+getters method
+
+1. getTagName()
+2. getAttribute(AN);
+3. getText()
+4. getSize().getHeight()
+5. getSize().getWidth()
+6. getLocation().getX()
+7. getLocation().getY()
+8. getRect() -> has all above 4 options
+
+Homework: verify that UN is above PW in login page of POS
+verify that size of UN & PW is same
+
+
+
