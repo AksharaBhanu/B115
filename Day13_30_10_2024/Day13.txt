@@ -1,0 +1,13 @@
+<span data-v-7b563373="" data-v-957b4417="" class="oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message">Required</span>
+
+//span[text()='Required']
+
+Homework:
+go to pos application , click go button, verify the color of error msg
+
+
+in selenium we can take screenshot of element and page using getScreenshotAs method
+it supports 3 forms
+1. BASE64--> image is stored as String
+2. BYTES--> image is stored as bytes 010101 --> 
+3. FILE--> image is stored as png format (portable network graphics) 
