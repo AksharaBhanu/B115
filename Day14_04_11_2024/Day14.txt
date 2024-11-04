@@ -1,0 +1,27 @@
+in selenium we can take screenshot of only current visible area of the page
+
+if the page is lengthy it will not scroll and take the screenshot
+
+How to scroll the web page?
+--> using java script 
+
+How to run JS manually?
+1. open the browser, goto req page
+2. open dev tool bar (F12)
+3. goto console tab
+4. type the JS code and press enter
+Ex: alert('hi')
+
+How to run JS automatically using selenium?
+using executeScript method of JavascriptExecutor interface
+
+write  a script to scroll down
+write  a script to scroll up
+scroll to bottom of the page
+scroll to specific element
+
+<a  href="https://www.facebook.com/groups/aksharatraining" target="_blank">
+						<span class="elementor-screen-only">Facebook-square</span>
+						<i class="fab fa-facebook-square"></i>					</a>
+
+//a[contains(@href,'facebook')]
