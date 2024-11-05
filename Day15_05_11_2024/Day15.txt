@@ -1,0 +1,38 @@
+when do we scroll?
+if the element is not displayed at current visible area of the page
+(scroll and click)
+
+scroll and take the screenshot
+
+Note: we can try using 3rd party tool to take screenshot of complete page
+ex: AShot
+
+in selenium 4 we can use new methods available under Actions class to scroll
+Note: Actions class is present in selenium 3 also
+
+
+Action--> interface 
+Actions --> class
+both are present under interactions package
+
+Actions class has parameterized constructor
+Whenever we call any method of Actions class we must call perform method at the end
+
+how do you handle drop down menu?/how do u perform mouse hover action?
+--> using moveToElement method of Actions class
+
+Home work: goto testers hub->Demo Testing site--> tooltip
+
+how do u right click on the element using selenium?
+how do u handle context menu?
+
+Home work: double click and print before and after color 
+
+
+
+
+
+
+
+
+
