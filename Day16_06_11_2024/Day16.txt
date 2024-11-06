@@ -1,0 +1,26 @@
+Uses/methods of Actions class
+1. scrollByAmount
+2. scrollToElement 
+3. mouse hover (move to element)--drop down menu
+4. double click
+5. right click (context click)--> context menu
+6. drag and drop
+7. clickAndHold
+8. pause
+9. release
+10. perform()
+
+frame
+1. web page present inside another web page is called as embedded webpage
+2. it is created using <iframe>
+3. if the element is inside the frame we get 'View Frame Source' and 'Reload Frame' option in context menu
+4. to handle it we need to switch into frame (3 overloaded methods)
+     
+//iframe[@role='presentation']
+<iframe role="presentation" frameborder="0" scrolling="no" name="callout" src="https://ogs.google.com/widget/callout?prid=19037050&amp;pgid=19037049&amp;puid=a5627eb5c02923db&amp;eom=1&amp;cce=1&amp;dc=1&amp;origin=https%3A%2F%2Fwww.google.com&amp;cn=callout&amp;pid=1&amp;spid=538&amp;hl=en" style="height: 100%; width: 100%; color-scheme: light;"></iframe>
+
+<button aria-label="Stay signed out" class="M6CB1c rr4y5c" jsname="ZUkOIc" jslog="71121; track:click;" data-dismiss="n">Stay signed out</button>
+//button[text()='Stay signed out']
+
+
+	
