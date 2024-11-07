@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.safari.SafariDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chromium.ChromiumDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.SearchContext"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
     <fullyQualifiedTypeName name="graphql.relay.Edge"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.remote.RemoteWebDriver"/>
@@ -24,5 +23,7 @@
     <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 </qualifiedTypeNameHistroy>

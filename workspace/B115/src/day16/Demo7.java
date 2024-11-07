@@ -10,7 +10,7 @@ public class Demo7 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.google.com");
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		driver.switchTo().frame("callout");
 		driver.findElement(By.xpath("//button[text()='Stay signed out']")).click();
 		Thread.sleep(2000);
