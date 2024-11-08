@@ -1,0 +1,14 @@
+Popups
+1. frame popup
+2. alert popup (java script popup)
+3. file upload
+4. file download
+
+		getWindowHandle				getWindowHandles
+return type:	String					Set<String>
+		address of current window 		address of all the window (parent+ all child)
+
+
+		close				quit
+	closes current browser			closes all the browser
+	it will not terminate session		it will terminate the session
