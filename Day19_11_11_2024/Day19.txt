@@ -1,0 +1,4 @@
+				findElement		findElements
+return type:			WebElement		List<WebElement> 
+duplicate locator: 		1st Matching element	all the matching elements
+no match			NoSuchElementException	empty list
