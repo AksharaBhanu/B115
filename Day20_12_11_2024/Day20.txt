@@ -1,0 +1,31 @@
+				findElement		findElements
+return type:			WebElement		List<WebElement> 
+duplicate locator: 		1st Matching element	all the matching elements
+no match			NoSuchElementException	empty list
+Home Work
+1. go to flipkart.com , search iPhone and print all the autosuggestions
+
+2. go to https://www.globalsqa.com, mouse hover on FREE EBOOKS, print all the menu options
+
+3. go to https://swisnl.github.io/jQuery-contextMenu/demo.html , right click and print all options present on context menu 
+
+4. select all checkbox of items present in POS application
+
+list box/drop down list box/combo box
+created using <select> tag
+items are added using <option> tag
+
+in selenium we can handle list box using Select class
+it has parameterized constructor which takes an arg type WebElement
+in Select class we have 3 methods to select
+1. select by index (int)
+2. select by value (str)
+3. select by visible text(str)
+
+value and text is CS
+
+if any of the arg is invalid we get NSEE
+
+getOptions()---> returns all the options present in listbox
+getWrappedElement()
+
