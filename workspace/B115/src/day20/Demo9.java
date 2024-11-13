@@ -17,6 +17,8 @@ public class Demo9 {
 		 Thread.sleep(1000);
 		 WebElement listBox = driver.findElement(By.id("A1"));
 		 Select select=new Select(listBox);
+		 System.out.println(select.isMultiple());//false
+		 select.deselectByIndex(0);
 		 System.out.println(select.getWrappedElement().getText());
 		 Thread.sleep(1000);
 		 driver.quit();

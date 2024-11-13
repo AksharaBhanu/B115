@@ -1,0 +1,33 @@
+list box/drop down list box/combo box
+created using <select> tag
+items are added using <option> tag
+
+in selenium we can handle list box using Select class
+it has parameterized constructor which takes an arg type WebElement
+in Select class we have 3 methods to select
+1. select by index (int)
+2. select by value (str)
+3. select by visible text(str)
+
+value and text is CS
+
+if any of the arg is invalid we get NSEE
+
+4. getOptions()---> returns all the options present in listbox
+5. getWrappedElement()
+
+Handling multi select listbox 
+
+Code is same for Single Select and Multi select listbox
+
+but only deselect method works on MSLB, if we try to use it on SSLB we get exception
+
+6. deselect by index (int)
+7. deselect by value (str)
+8. deselect by visible text(str)
+9. deselect All ()
+10. isMultiple () --> true means MSLB , false means SSLB
+
+Homework
+print content of list box in reverse sorted order
+
