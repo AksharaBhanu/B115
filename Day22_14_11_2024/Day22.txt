@@ -1,0 +1,25 @@
+NoSuchElementException
+1. invalid locator type
+2. invalid locator value
+3. inside the frame
+4. inside the child window
+5. inside the new tab
+6. invalid index/value/visible text (select)
+7. timing issue (synchronization)
+
+synchronization point
+process of matching selenium speed with application
+
+solution:
+1.Thread.sleep(n*1000) ---> wait for n seconds- but it does not check if element is present or not, it is called as blind wait, we should specify multiple times (wherever app is slow)
+this is a java code 
+
+2. implicit wait
+
+  1. method is implicitlyWait
+  2. the duration specified in implicitlyWait is used by all findElement/findElements 
+  3. if we set 10S in implicitlyWait, it is 10S for each FE/FES statement
+  4. we need not specify IW multiple times
+  5. default value for IW is 0s
+  polling timeout PT10S
+
