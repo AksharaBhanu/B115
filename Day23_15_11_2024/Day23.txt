@@ -1,0 +1,60 @@
+What is the diff b/w IW & EW
+
+IW						EW
+1. used handle sync of FE & FEs			1. used handle sync of any method		2. 2. after the time limit: NSEE/Emptylist 	2. TimeOutException
+3. we specify only once				3. multiple times
+4. we do not specify waiting condition		4. we must specify waiting condition explicitly
+   explicitly(it is built-in)	
+
+only in selenium 4 (no diff in TimeUnit)
+5.supports all TimeUnit				5. supports all TimeUnit	
+
+
+only in selenium 3
+5.supports all TimeUnit				5. supports only seconds
+WebDriverWait w=new WebDriverWait(driver, 10);
+-----------------------------------------------------------------------------------
+diff way of handling 
+1. using implicit wait----->
+2. using Thread.sleep
+3. using WebDriverWait
+4. FluentWait
+5. custom wait
+
+Note:
+default polling period is 500mili seconds specified in FluentWait class
+FluentWait is parent class of WebDriverWait
+
+
+6. PageLoadTimeout
+ used by driver.get  navigate.back forward refresh navigate.to
+default value 5min
+
+7.ScriptTimeout 
+ used by JSE 
+ default value is 30s
+ 
+
+
+Types of wait in Selenium
+
+implicit wait----> NSEE
+explicit wait----> TimeOutException
+Fluent Wait----> TimeOutException
+PageLoadTimeout----> TimeOutException
+ScriptTimeout ----> ScriptTimeOutException
+custom wait--> depends on the code
+blind wait--> InterruptedException
+
+
+
+
+
+
+
+
+
+
+
+
+

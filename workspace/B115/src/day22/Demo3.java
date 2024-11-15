@@ -15,7 +15,7 @@ public class Demo3 {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-	
+
 	driver.get("file:///E:/B115%207PM%20Selenium/share/pages/Sample17.html");
 	
 	driver.findElement(By.id("ok")).click();
