@@ -1,0 +1,38 @@
+OOPS 
+class--> blue print--> ChromeDriver FirefoxDriver RemoteWebDriver Actions Select
+object--> instance of the class--> new ChromeDriver()....
+constructor--> new Actions(driver); new Select(listBox);
+new ChromeDriver();
+new ChromeDriver(options);
+
+polymorphism
+	method overloading--> sendKeys("Bhanu"); sendKeys(Keys.ENTER);
+			      navigate().to("url"); navigate().to(urlObj); 
+			     switchTo().frame(index); switchTo().frame("idName");
+
+
+	method overriding-->
+	all the methods SearchContext WebDriver JSE TakesScreenshot are overridden in RemoteWebDrierClass
+
+inheritance--> 
+Parent is WebDriver Child is RemoteWebDriver
+Parent is WebElement	Child is RemoteWebElement
+
+abstraction--interfaces 
+SearchContext WebDriver JSE TakesScreenshot Action Alert
+
+abstract class----By class
+
+encapsulation
+binding data member with member function so that they behave as a single unit
+
+We will use encapsulation while developing automation script....
+
+3 steps
+1. declaration --> private
+2. initialization--> constructor
+3. utilization-->getter/setters method
+
+
+
+
