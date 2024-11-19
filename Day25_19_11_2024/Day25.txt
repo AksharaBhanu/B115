@@ -1,0 +1,37 @@
+Stale Element Reference Exception
+
+Reference of the Element is Stale old/expired
+
+
+what is Stale Element Reference Exception?
+it means address of the element is old/expired
+
+when do we get this exception?
+1. Fe
+2. refresh
+3. action
+
+a. after finding the element
+b. before performing any action on that element
+c. if page is refreshed then we get this exception
+
+to handle this exception we use Page Object Model (POM)
+1. one of the java design pattern
+2. in POM we declare the element using @FindBy (read: Find By Annotation)
+	syntax:
+	@FindBy(locator="value")
+	private WebElement elementName;
+
+3. in POM we initialize the POM class using initElements method of PageFactory class
+A.m1(10);
+PageFactory.initElements(WebDriver, POMclassObject);
+
+4. no changes in methods
+
+
+
+
+in POM if we dont use PF.initElements.... we get NullPointerException
+
+
+
