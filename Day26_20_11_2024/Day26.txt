@@ -1,0 +1,26 @@
+
+
+
+
+How do u handle multiple elements in POM (findElements)
+using @FindBy only but Data type should be List<WebElement>
+
+How do handle alert popup using Page object model
+
+
+1. in POM we use @FindBy to declare the element
+2. in POM we use PageFactory.initElements(WebDriver,POMclassObj); to initialize the element
+3. in POM we use @FindBy to handle multiple elements also
+4. if findElemnt method is not present (ex: alert) then we cant use @FindBy
+5. POM class is used to store elements and methods
+6. it is also called as repository  class
+7. we do not write main method in POM class
+8. number of POM class will be same as number of web pages present in application
+9. the class in which we write main method and call pom class method--> Test Class
+10. number of Test class will be same as number of Test cases
+ 
+TestNG
+1. single click -execute multiple scripts
+2. generate report
+
+
