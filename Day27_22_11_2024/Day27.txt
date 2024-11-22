@@ -1,0 +1,48 @@
+TestNG 
+1. Test Next Generation is a unit testing tool (like Junit)
+2. We should install it in eclipse as plugin
+3. for every project - TestNG lib should be added
+4. using TestNG we can execute multiple tests and  generate report
+5. TestNG test --> it is a class which contains @Test method instead of main method
+6. to run multiple tests we use testng suite --> testng.xml
+7. to create xml file-> right click on the package --> TestNG--> convert to TestNG, finish
+8. to execute it, right click on xml file-> run as -> testng suite
+9. to view the result, refresh the project--> test-output--> emailable-report.html
+10. in TestNG , instead of main method we use @Test method
+11. in TestNG , instead of  SOP we use Reporter.log(msg,true);
+12. to run the test multiple times with diff data we use DataProvider
+    return type of Data Provider
+	a.  Object[] single dimensional array of any type 
+		number of iteration of test --> array size
+		number of arg of test--> 1 arg
+	b.  Object[][] 2 D array of any type
+		number of iteration of test --> number rows
+		number of arg of test--> number columns 
+
+	c.  Iterator<Object>
+		number of iteration of test --> collection size
+		number of arg of test--> 1 arg
+
+	d. Iterator<Object[]>
+		number of iteration of test --> collection size
+		number of arg of test--> array size
+
+
+
+13. how to run test multiple times with out DP & loop --> invocationCount
+
+
+@Test
+@DataProvider
+@BeforeMethod
+@AfterMethod
+@BEforeClass
+@AfterClass
+
+
+
+
+
+
+
+

@@ -1,23 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[@BeforeSuite]]>
+    </line>
+    <line>
+      <![CDATA[@BeforeTest]]>
+    </line>
+    <line>
+      <![CDATA[@BeforeClass]]>
+    </line>
+    <line>
+      <![CDATA[@BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[@Test]]>
+    </line>
+    <line>
+      <![CDATA[@AfterMethod]]>
+    </line>
+    <line>
+      <![CDATA[ @AfterClass]]>
+    </line>
+    <line>
+      <![CDATA[@AfterTest]]>
+    </line>
+    <line>
+      <![CDATA[ @AfterSuite]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-11-20T20:19:41 IST" name="Suite" finished-at="2024-11-20T20:19:42 IST" duration-ms="99">
+  <suite started-at="2024-11-22T20:24:37 IST" name="Suite" finished-at="2024-11-22T20:24:37 IST" duration-ms="41">
     <groups>
     </groups>
-    <test started-at="2024-11-20T20:19:41 IST" name="Test" finished-at="2024-11-20T20:19:42 IST" duration-ms="99">
-      <class name="day26.Demo4">
-        <test-method signature="m1()[pri:0, instance:day26.Demo4@78b66d36]" started-at="2024-11-20T20:19:42 IST" name="m1" finished-at="2024-11-20T20:19:42 IST" duration-ms="16" status="PASS">
+    <test started-at="2024-11-22T20:24:37 IST" name="Test" finished-at="2024-11-22T20:24:37 IST" duration-ms="41">
+      <class name="day27.Demo12">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeSuite" finished-at="2024-11-22T20:24:37 IST" duration-ms="9" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[@BeforeSuite]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- day26.Demo4 -->
-      <class name="day26.Demo5">
-        <test-method signature="m2()[pri:0, instance:day26.Demo5@49b0b76]" started-at="2024-11-20T20:19:42 IST" name="m2" finished-at="2024-11-20T20:19:42 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeTest" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[@BeforeTest]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- m2 -->
-      </class> <!-- day26.Demo5 -->
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeClass" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[@BeforeClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeMethod" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[@BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="f" finished-at="2024-11-22T20:24:37 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[@Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterMethod" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[@AfterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterClass" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ @AfterClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterTest" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[@AfterTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterSuite" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ @AfterSuite]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- day27.Demo12 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
