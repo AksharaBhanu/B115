@@ -1,0 +1,32 @@
+<suite>---> @BeforeSuite
+</suite>---> @AfterSuite
+
+<test>---> @BeforeTest
+</test>---> @AfterTest
+
+<class>--> @BeeforeClass
+</class>-->@AfterClass
+
+<method>--->@BeforeMethod
+</method>-->@AfterMethod
+
+TestNG groups
+1. include
+2. exclude
+3. priority
+4. alwaysRun=true
+5. enabled=false
+
+How to u perform verification in TestNG
+using Assert 
+
+1. Assert is a class
+2. all its methods are static and overloaded
+3. assertEquals   assertNotEquals assertTrue    assertFalse  fail()
+
+
+Assert					SoftAssert
+exit current Test if failed		it will not exit current Test if failed
+all the methods are static		non-static method
+we dont call assertAll			we must call assertAll at the end
+

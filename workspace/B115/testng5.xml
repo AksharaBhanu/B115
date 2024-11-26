@@ -1,0 +1,12 @@
+<suite name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="day28.Demo1"/>
+    </classes>
+  </test> 
+  <test name="Test2">
+    <classes>
+      <class name="day28.Demo2"/>
+    </classes>
+  </test> 
+</suite>

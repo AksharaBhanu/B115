@@ -1,103 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[@BeforeSuite]]>
+      <![CDATA[StepA1]]>
     </line>
     <line>
-      <![CDATA[@BeforeTest]]>
+      <![CDATA[StepA2]]>
     </line>
     <line>
-      <![CDATA[@BeforeClass]]>
+      <![CDATA[StepB1]]>
     </line>
     <line>
-      <![CDATA[@BeforeMethod]]>
+      <![CDATA[StepC1]]>
     </line>
     <line>
-      <![CDATA[@Test]]>
-    </line>
-    <line>
-      <![CDATA[@AfterMethod]]>
-    </line>
-    <line>
-      <![CDATA[ @AfterClass]]>
-    </line>
-    <line>
-      <![CDATA[@AfterTest]]>
-    </line>
-    <line>
-      <![CDATA[ @AfterSuite]]>
+      <![CDATA[StepC2]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-22T20:24:37 IST" name="Suite" finished-at="2024-11-22T20:24:37 IST" duration-ms="41">
+  <suite started-at="2024-11-26T20:21:12 IST" name="Default suite" finished-at="2024-11-26T20:21:12 IST" duration-ms="89">
     <groups>
     </groups>
-    <test started-at="2024-11-22T20:24:37 IST" name="Test" finished-at="2024-11-22T20:24:37 IST" duration-ms="41">
-      <class name="day27.Demo12">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeSuite" finished-at="2024-11-22T20:24:37 IST" duration-ms="9" status="PASS">
+    <test started-at="2024-11-26T20:21:12 IST" name="Default test" finished-at="2024-11-26T20:21:12 IST" duration-ms="89">
+      <class name="day28.Demo5">
+        <test-method signature="testA()[pri:0, instance:day28.Demo5@22a637e7]" started-at="2024-11-26T20:21:12 IST" name="testA" finished-at="2024-11-26T20:21:12 IST" duration-ms="20" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[@BeforeSuite]]>
+              <![CDATA[StepA1]]>
+            </line>
+            <line>
+              <![CDATA[StepA2]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeTest" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testA -->
+        <test-method signature="testB()[pri:0, instance:day28.Demo5@22a637e7]" started-at="2024-11-26T20:21:12 IST" name="testB" finished-at="2024-11-26T20:21:12 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [bye] but found [hi]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [bye] but found [hi]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at day28.Demo5.testB(Demo5.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[@BeforeTest]]>
+              <![CDATA[StepB1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeClass" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testB -->
+        <test-method signature="testC()[pri:0, instance:day28.Demo5@22a637e7]" started-at="2024-11-26T20:21:12 IST" name="testC" finished-at="2024-11-26T20:21:12 IST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [bye] but found [hi]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [bye] but found [hi]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at day28.Demo5.testC(Demo5.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[@BeforeClass]]>
+              <![CDATA[StepC1]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="beforeMethod" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
             <line>
-              <![CDATA[@BeforeMethod]]>
+              <![CDATA[StepC2]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="f" finished-at="2024-11-22T20:24:37 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[@Test]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterMethod" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[@AfterMethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterClass" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ @AfterClass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterTest" finished-at="2024-11-22T20:24:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[@AfterTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:day27.Demo12@15eb5ee5]" started-at="2024-11-22T20:24:37 IST" name="afterSuite" finished-at="2024-11-22T20:24:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ @AfterSuite]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- day27.Demo12 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testC -->
+      </class> <!-- day28.Demo5 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

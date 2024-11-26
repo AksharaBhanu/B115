@@ -1,0 +1,17 @@
+
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="day28.Demo1">
+		  <methods>
+			  <method name="testA"></method>
+		  </methods>
+      </class>
+      <class name="day28.Demo2">
+		   <methods>
+			  <method name="testB"></method>
+		  </methods>
+	</class>
+    </classes>
+  </test> 
+</suite>
