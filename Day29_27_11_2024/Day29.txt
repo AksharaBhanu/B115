@@ -1,0 +1,27 @@
+How to execute Test2 only if Test1 is PASSED?
+using dependsOnMethods
+
+Note: if Test1 is failed, then Test2 will be reported as SKIPPED
+
+Can we send data from testing suite to testing class?
+yes-> using parameter
+
+If we use @optional("value") for method arg then if the parameter value is not specified it used optional value
+
+
+How to run multiple scripts in parallel?
+using parallel option available in TestNG
+
+mode:
+1.none
+2.methods
+3.classes
+4.tests
+
+---> Cross Browser testing / browser compatibility testing
+Selenium Grid
+to execute test script 
+
+login to https://saucelabs.com
+
+

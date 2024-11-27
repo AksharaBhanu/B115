@@ -1,0 +1,8 @@
+<suite name="Suite">
+  <test name="Test">
+<!--	<parameter name="city" value="Agra"/>-->
+    <classes>
+      <class name="day29.Demo3"/>
+    </classes>
+  </test> 
+</suite>
