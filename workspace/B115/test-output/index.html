@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\B115 7PM Selenium\share\workspace\B115\testng10.xml</span>
+                    <span>E:\B115 7PM Selenium\share\workspace\B115\testng11.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="day29.Demo5" class="method navigator-link" hash-for-method="testA(chrome)">testA(chrome)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="day30.Demo2" class="method navigator-link" hash-for-method="testA(LG, edge)">testA(LG, edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="day29.Demo5" class="method navigator-link" hash-for-method="testA(edge)">testA(edge)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="day30.Demo2" class="method navigator-link" hash-for-method="testA(SG, chrome)">testA(SG, chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,23 +126,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">day29.Demo5</span>
+              <span class="class-name">day30.Demo2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA(chrome)">
-                  </a> <!-- testA(chrome) -->
+                  <a name="testA(LG, edge)">
+                  </a> <!-- testA(LG, edge) -->
                   <span class="method-name">testA</span>
-                  <span class="parameters">(chrome)</span>
+                  <span class="parameters">(LG,edge)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testA(edge)">
-                  </a> <!-- testA(edge) -->
+                  <a name="testA(SG, chrome)">
+                  </a> <!-- testA(SG, chrome) -->
                   <span class="method-name">testA</span>
-                  <span class="parameters">(edge)</span>
+                  <span class="parameters">(SG,chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,25 +150,27 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\B115 7PM Selenium\share\workspace\B115\testng10.xml</span>
+            <span class="header-content">E:\B115 7PM Selenium\share\workspace\B115\testng11.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestGC&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;day29.Demo5&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestGC --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestME&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestLG&quot;&gt;
+    &lt;parameter name=&quot;system&quot; value=&quot;LG&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;day29.Demo5&quot;/&gt;
+      &lt;class name=&quot;day30.Demo2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestME --&gt;
+  &lt;/test&gt; &lt;!-- TestLG --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestSG&quot;&gt;
+    &lt;parameter name=&quot;system&quot; value=&quot;SG&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;day30.Demo2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestSG --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,10 +182,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestGC (1 class)</span>
+                <span class="test-name">TestLG (1 class)</span>
               </li>
               <li>
-                <span class="test-name">TestME (1 class)</span>
+                <span class="test-name">TestSG (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,17 +214,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testA')
-data.setCell(0, 2, 'day29.Demo5')
-data.setCell(0, 3, 16847);
+data.setCell(0, 2, 'day30.Demo2')
+data.setCell(0, 3, 17656);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testA')
-data.setCell(1, 2, 'day29.Demo5')
-data.setCell(1, 3, 15688);
+data.setCell(1, 2, 'day30.Demo2')
+data.setCell(1, 3, 17018);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -235,15 +236,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA(chrome)</span>
+              <span class="reporter-method-name">testA(LG, edge)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Open Chrome Browser</span>
+                <span class="reporter-method-output">Open Edge Browser in Akashara Grid</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA(edge)</span>
+              <span class="reporter-method-name">testA(SG, chrome)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Open Edge Browser</span>
+                <span class="reporter-method-output">Open Chrome Browser in Saucelabs Grid</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,13 +262,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">day29.Demo5</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">day30.Demo2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testA(chrome)</span>
+                <span class="method-name">testA(LG, edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testA(edge)</span>
+                <span class="method-name">testA(SG, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

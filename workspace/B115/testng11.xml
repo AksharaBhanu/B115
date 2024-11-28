@@ -1,0 +1,16 @@
+<suite parallel="tests" name="Suite">
+  <test name="TestLG">
+	<parameter name="system" value="LG"/>
+	<parameter name="browser" value="edge"/>
+    <classes>
+      <class name="day30.Demo2"/>
+    </classes>
+  </test>
+  <test name="TestSG">
+	<parameter name="system" value="SG"/>
+	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="day30.Demo2"/>
+    </classes>
+  </test>
+</suite>

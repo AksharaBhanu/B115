@@ -2,38 +2,25 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open Chrome Browser]]>
+      <![CDATA[Open Edge Browser in Akashara Grid]]>
     </line>
     <line>
-      <![CDATA[Open Edge Browser]]>
+      <![CDATA[Open Chrome Browser in Saucelabs Grid]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-27T19:49:10 IST" name="Suite" finished-at="2024-11-27T19:49:27 IST" duration-ms="16889">
+  <suite started-at="2024-11-28T19:51:53 IST" name="Suite" finished-at="2024-11-28T19:52:11 IST" duration-ms="17734">
     <groups>
     </groups>
-    <test started-at="2024-11-27T19:49:10 IST" name="TestGC" finished-at="2024-11-27T19:49:26 IST" duration-ms="15734">
-      <class name="day29.Demo5">
-        <test-method signature="testA(java.lang.String)[pri:0, instance:day29.Demo5@5be6e01c]" started-at="2024-11-27T19:49:10 IST" name="testA" finished-at="2024-11-27T19:49:26 IST" duration-ms="15688" status="PASS">
+    <test started-at="2024-11-28T19:51:53 IST" name="TestLG" finished-at="2024-11-28T19:52:10 IST" duration-ms="17098">
+      <class name="day30.Demo2">
+        <test-method signature="testA(java.lang.String,java.lang.String)[pri:0, instance:day30.Demo2@368f2016]" started-at="2024-11-28T19:51:53 IST" name="testA" finished-at="2024-11-28T19:52:10 IST" duration-ms="17018" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[LG]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Open Chrome Browser]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-      </class> <!-- day29.Demo5 -->
-    </test> <!-- TestGC -->
-    <test started-at="2024-11-27T19:49:10 IST" name="TestME" finished-at="2024-11-27T19:49:27 IST" duration-ms="16889">
-      <class name="day29.Demo5">
-        <test-method signature="testA(java.lang.String)[pri:0, instance:day29.Demo5@1cbbffcd]" started-at="2024-11-27T19:49:10 IST" name="testA" finished-at="2024-11-27T19:49:27 IST" duration-ms="16847" status="PASS">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
                 <![CDATA[edge]]>
               </value>
@@ -41,11 +28,34 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Open Edge Browser]]>
+              <![CDATA[Open Edge Browser in Akashara Grid]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-      </class> <!-- day29.Demo5 -->
-    </test> <!-- TestME -->
+      </class> <!-- day30.Demo2 -->
+    </test> <!-- TestLG -->
+    <test started-at="2024-11-28T19:51:53 IST" name="TestSG" finished-at="2024-11-28T19:52:11 IST" duration-ms="17734">
+      <class name="day30.Demo2">
+        <test-method signature="testA(java.lang.String,java.lang.String)[pri:0, instance:day30.Demo2@7eac9008]" started-at="2024-11-28T19:51:53 IST" name="testA" finished-at="2024-11-28T19:52:11 IST" duration-ms="17656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Open Chrome Browser in Saucelabs Grid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- day30.Demo2 -->
+    </test> <!-- TestSG -->
   </suite> <!-- Suite -->
 </testng-results>

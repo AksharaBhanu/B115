@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="TestSG(failed)">
+    <parameter name="system" value="SG"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="day30.Demo2">
+        <methods>
+          <include name="testA" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day30.Demo2 -->
+    </classes>
+  </test> <!-- TestSG(failed) -->
+</suite> <!-- Failed suite [Suite] -->
