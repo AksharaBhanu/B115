@@ -1,0 +1,38 @@
+Maven--dependency tool 
+
+jar file required to execute the project --> dependency 
+
+pom.xml--> project object model
+
+group id
+artifact id
+version
+
+
+run pom.xml----> update jar files
+run testng.xml--> execute test classes
+
+plugin --> integrate testing.xml with pom.xml
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+
+if we run testing.xml  , result will be in test-output folder
+if we run pom.xml, result will be in target folder
+
+Handling Excel file
+poi dependency-->https://mvnrepository.com/artifact/org.apache.poi/poi/5.3.0
+
+Homework: read data from multiple rows and col of excel sheet
+hint: use nested for loop 
+
+
+
+
+
+
+
+
+
+
+
+
