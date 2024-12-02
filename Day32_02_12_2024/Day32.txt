@@ -1,0 +1,11 @@
+general guideline to  develop a method 
+1. do not hardcode any input--> use method arg
+2. do not throw any exception - use try-catch
+3. in catch  block printStackTrace
+4. by default it should be static
+5. if its getter method , return a value
+
+
+home work
+1. add firefox , safari ... browser code
+2. print details each step in BaseTest
