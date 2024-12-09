@@ -1,0 +1,47 @@
+package generic;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseTest {
+	
+	public WebDriver driver;
+	public WebDriverWait wait;
+	public String configPath="./config.properties";
+	
+	@BeforeMethod
+	public void preCondition()
+	{
+		
+		
+		String browser = Utility.getProperty("./config.properties", "BROWSER");
+		String app_url = Utility.getProperty("./config.properties", "APPURL");
+		String ITO = Utility.getProperty("./config.properties", "ITO");
+		String ETO = Utility.getProperty("./config.properties", "ETO");
+		if(browser.equals("chrome"))
+		{
+			driver=new ChromeDriver();
+		}
+		else
+		{
+			driver=new EdgeDriver();
+		}
+		driver.get(app_url);
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ITO)));
+		wait=new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(ETO)));
+	}
+	
+	@AfterMethod
+	public void postCondition()
+	{
+		driver.quit();
+	}
+}

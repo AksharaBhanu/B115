@@ -1,0 +1,16 @@
+package script;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+
+public class ValidLogin extends BaseTest
+{
+
+	@Test
+	public void testValidLogin()
+	{
+		
+	}
+	
+}

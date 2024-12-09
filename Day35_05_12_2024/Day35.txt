@@ -1,0 +1,103 @@
+Test Case1: Valid Login
+pre-condition: login page
+Steps
+1. enter valid un
+2. enter valid pw
+3. click on login
+4. home page should be displayed
+
+
+Steps to convert MTC & ATS
+1. execute the TC manually (system study)
+2. while executing the TC note down
+	page		element 	action
+	Login page 	username	enter
+	Login page	password	enter
+	Login page	go		click
+	Home page	Welcome...	verify displayed
+3. for every page, create respective POM class
+	1. under page package create a POM class 
+	2. Name of the class should be same as page name ending with 'Page'
+	3. declare the elements using @FindBy
+	4. initialize it using PageFactory inside the constructor
+	5. utilize it using getters/setters method
+	6. push it to github
+
+
+4. Creating Test Class
+	1. create a testng class under 'script' package
+	2. name of the class should be same as respective Test case
+	3. Test Class should extend BaseTest Class
+	4. cerate test method with same name , start with 'test'
+	5. specify the priority , group
+	6. specify MT steps as in-line comment
+	7. below each comment call the respective POM class methods
+
+5. Data Driving the script
+	1. use input.xlsx present in data folder of AFW to data drive the script
+	2. ensure that sheet name is same as respective test case name
+	3. 1st row should be the header
+	4. test data should be present from 2nd row
+	5. in Test class use getExcelData method of Utility class to read test data
+	6. send these test data as argument for req pom class methods
+	7. execute it and ensure that script is working
+	8. commit and push to git
+
+external files--> xls csv json xml properties DB(SQL)
+
+Test Case2: Invalid Login
+steps:
+1. enter invalid un
+2. enter invalid pw
+3. click on go button
+4. should display error msg
+
+
+	page		element 	action
+	LoginPage	username	enter
+	Login page	password	enter
+	Login page	go		click
+	Login page	errmsg		verify displayed
+
+Execution flow
+1. when run pom.xml, it will update the jar file from Maven Central repository
+   into Maven Local Repository
+location of MLR-->users/.m2/repository
+
+2. execute testng.xml with the help of sure fire plugin
+
+3. testng.xml creates parameter 'property' assigns the value config.properties and calls the TestNG class present in script package
+
+4. in our framework every TestNG class extends BaseTest class which has @BeforeMethod and @AfterMethod
+
+5. 1st it will execute @BeforeMethod
+	a.Read Property files
+	b. open the specified browser(GC/MFF/ME) in req system(Local/Remote)
+	c. enter the url	
+	d. maximize the browser
+	e. Set ITO
+	f. set ETO
+
+6. after executing @BeforeMethod it will goto @Test Method
+	a.get data from input excel file
+	b.call the pom class method as per manual test case steps
+	c. perform action on the application
+	d. preform the verification (Assert)
+
+7. after executing @Test Method it will goto @AfterMethod which will close browser
+
+8. above steps (5,6 &7) will be repeated for every Test Case
+
+9. at the end html report will be generated in target folder/surefire-reports/emailable-report.html
+
+TestNG---> TestNG Framework
+Method driven Framework
+Data Driven Framework
+POM Framework
+--> Hybrid Framework
+
+keyword driven framework
+BDD
+
+
+

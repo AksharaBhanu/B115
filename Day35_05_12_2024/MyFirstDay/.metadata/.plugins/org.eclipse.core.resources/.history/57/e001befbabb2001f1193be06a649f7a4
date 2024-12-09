@@ -1,0 +1,27 @@
+package day32;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		char a='2';
+		int b=a;
+		System.out.println(b);
+		
+		String s="page 1 of 5";
+		int sum=0;
+		for(int i=0;i<s.length();i++)
+		{
+			char c=s.charAt(i);
+			if(c>='0' && c<='9')
+			{
+				int n=c;
+				n=n-48;
+				sum=sum+n;
+			}
+			
+		}
+		
+		System.out.println(sum);
+	}
+
+}

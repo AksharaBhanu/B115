@@ -1,0 +1,18 @@
+package script;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+
+public class Invalid_Login extends BaseTest
+{
+
+	@Test(priority =2,groups={"login"})
+	public void testInvalid_Login()
+	{
+//		1. enter invalid un
+//		2. enter invalid pw
+//		3. click on go button
+//		4. should display error msg
+	}
+}

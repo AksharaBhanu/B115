@@ -1,0 +1,9 @@
+package generic;
+
+public class Utility {
+
+	public static void getProperty()
+	{
+		
+	}
+}

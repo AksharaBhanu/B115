@@ -1,0 +1,67 @@
+when do we run AFW?
+when we get new build
+
+How do u run AFW automatically when we get new build?
+we integrate AFW with the build tool (Jenkins)
+
+Jenkins-CI/CD 
+
+How will install and configure Jenkins?
+DevOps Team
+
+Then what is the job of automation team?
+just integrate AFW with Jenkins
+
+How to integrate AFW with Jenkins?
+per-requists-->
+Jenkins URL
+UN & pwd
+dev project name
+
+steps:
+1. login to Jenkins
+2. click new item
+3. specify the name
+4.  select maven project
+5. click ok
+6.  click on Source Code Management
+7.  select git
+8. specify git repo url --> https://github.com/AksharaBhanu/b115afw.git
+9. select the credential (git UN & token)
+10. click save
+
+How to execute the AFW from Jenkins
+--> 3 ways
+
+1> manually 
+	login to Jenkins
+	select the automation project
+	click Build Now
+
+2> schedule it
+	login to Jenkins
+	select the automation project
+	click configure
+	click build triggers
+	select Build periodically checkbox
+	specify the schedule
+		MINUTE HOUR DOM MONTH DOW
+		30 19 6 12 5--> 7.30PM 6th Dec Friday
+		0 8 1-31 1-12 1-5--> 8AM all date all month Monday to Friday
+		0 7 * * * --> every day 7AM
+	
+	click save
+
+3. when we get new build 
+	login to Jenkins
+	select the automation project
+	click configure
+	click build triggers
+	select' Build after other projects are built' check box
+	specify Dev Project name under 'Projects to watch'
+	click Save
+
+
+
+
+

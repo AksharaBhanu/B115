@@ -1,0 +1,8 @@
+package script;
+
+import generic.BaseTest;
+
+public class Invalid_Login extends BaseTest
+{
+
+}

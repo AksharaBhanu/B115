@@ -1,0 +1,6 @@
+GRID=Yes
+GURL=http://192.168.29.187:4444
+BROWSER=edge
+APPURL=http://www.fb.com
+ITO=12
+ETO=7

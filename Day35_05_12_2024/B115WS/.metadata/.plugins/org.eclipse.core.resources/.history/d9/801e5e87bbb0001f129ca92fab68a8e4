@@ -1,0 +1,15 @@
+package generic;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class Utility {
+
+	public static void getProperty()
+	{
+		Properties p=new Properties();
+		p.load(new FileInputStream("./config.properties"));
+		String  v=p.getProperty("BROWSER");
+		System.out.println(v);
+	}
+}

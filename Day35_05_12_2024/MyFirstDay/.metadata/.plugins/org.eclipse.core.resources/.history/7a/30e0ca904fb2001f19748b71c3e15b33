@@ -1,0 +1,9 @@
+package script;
+
+import generic.BaseTest;
+
+public class ValidLogin extends BaseTest
+{
+
+	
+}

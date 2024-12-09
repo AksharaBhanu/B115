@@ -1,0 +1,19 @@
+package generic;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseTest {
+
+	@BeforeMethod
+	public void preCondition()
+	{
+		
+	}
+	
+	@AfterMethod
+	public void postCondition()
+	{
+		
+	}
+}

@@ -1,0 +1,4 @@
+BROWSER=edge
+APPURL=http://www.google.com
+ITO=10
+ETO=9

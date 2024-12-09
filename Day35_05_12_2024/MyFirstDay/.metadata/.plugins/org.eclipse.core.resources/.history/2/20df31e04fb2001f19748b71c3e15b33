@@ -1,0 +1,20 @@
+package script;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+
+public class ValidLogin extends BaseTest
+{
+
+	@Test(priority = 1,groups= {"login"})
+	public void testValidLogin()
+	{
+//		1. enter valid un
+//		2. enter valid pw
+//		3. click on login
+//		4. home page should be displayed
+
+	}
+	
+}

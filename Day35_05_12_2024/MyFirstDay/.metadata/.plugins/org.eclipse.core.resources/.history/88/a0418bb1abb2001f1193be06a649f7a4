@@ -1,0 +1,18 @@
+package day32;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		String s="page 1 of 5";
+		int sum=0;
+		for(int i=0;i<s.length();i++)
+		{
+			char c=s.charAt(i);
+			if(c>='0' && c<='9')
+			{
+				System.out.println(c);
+			}
+		}
+	}
+
+}

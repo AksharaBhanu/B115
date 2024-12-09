@@ -1,0 +1,4 @@
+How to upload AFW to github-->by automation architect 
+1. login to GitHub
+2. create a repository
+3. upload AFW from eclipse into GitHub repo

@@ -1,0 +1,70 @@
+How to upload AFW to github-->by automation architect 
+1. login to GitHub
+2. create a repository
+3. upload AFW from eclipse into GitHub repo
+
+?  new file
+>  modified file
+x deleted file
+
+how to take AFW present in GitHub into our system
+
+daily activity --> convert manual test case into automation script
+1. only regression test case
+2. manual testing team should give regression test cases
+3. which one first -smoke test case
+4. order also should be given by MTT
+
+How to automation MTC?
+Test Case1: Valid Login
+pre-condition: login page
+Steps
+1. enter valid un
+2. enter valid pw
+3. click on login
+4. home page should be displayed
+
+
+steps
+1. execute the test case manually
+2. while executing TC note down
+	a.page
+	b.element
+	c.action
+ex:
+page 		element 	action
+LoginPage	username	enter/type
+LoginPage	password	enter
+LoginPage	gobutton	click
+homepage	logout		verify displayed
+
+3. for every page create respective POM class
+	a. create a class under page package
+	b. name of the class should same as page name , end with the word 'Page'
+	c. declare element using @FindBy
+	d. initialize it using PF
+	e. utilize using getters/setters method
+
+4. for every test case create TestNG class
+	a. create a class under script package
+	b. name should be same as test case name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

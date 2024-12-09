@@ -1,0 +1,15 @@
+package generic;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class Utility {
+
+	public static void getProperty(String path,String key)
+	{
+		Properties p=new Properties();
+		p.load(new FileInputStream(path));
+		String  v=p.getProperty(key);
+		System.out.println(v);
+	}
+}
